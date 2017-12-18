@@ -115,31 +115,11 @@ p {
         line-height: 30px;
         padding-bottom: 20px;
     }
-    #work {
-        padding-bottom: 50px;
-    }
     .button {
         padding-top: 0px;
     }
     .button a {
         font-size: 25px;
-    }
-    #work h2 {
-        margin: 0;
-        padding-bottom: 20px;
-    }
-    .project1 {
-        width: 100%;
-    }
-    .project2 {
-        width: 100%;
-    }
-    .antilop1 {
-        width: 100%;
-        padding-bottom: 10px;
-    }
-    .antilop2 {
-        width: 100%;
     }
     footer {
         padding: 22px 20px;
@@ -253,22 +233,6 @@ p {
     .button a {
         font-size: 35px;
     }
-    .project1 {
-        width: 48%;
-        float: left;
-    }
-    .project2 {
-        width: 48%;
-        float: right;
-    }
-    .antilop1 {
-        width: 100%;
-        float: left;
-    }
-    .antilop2 {
-        width: 100%;
-        float: right;
-    }
     .nav-hamburger {
         display: none;
     }
@@ -349,13 +313,6 @@ p {
 }
 
 /*__________*/
-
-#work h2 {
-    text-transform: uppercase;
-    color: #222;
-    font-size: 30px;
-    text-align: left;
-}
 
 #text {
     clear: both;

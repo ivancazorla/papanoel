@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escribir a Papá Noel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="index.html">Escribir a Papá Noel</a></h1>
+        <div class="hamburger" onclick="showNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="nav">
+            <li><a href="about.html">Quién soy</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="carta.html">Escribir carta</a></li>
+        </ul>
+        <ul class="nav-hamburger">
+            <li><a href="about.html">Quién soy</a></li>
+            <li><a href="fotos.html">Fotos</a></li>
+            <li><a href="carta.html">Escribir carta</a></li>
+        </ul>
+    </header>
+    <section id="container">
+        <div id="hero">
+            <p>¿Quieres escribirle una carta a Papá Noel?</p>
+            <h4>Así es, niños, es verdad. Lo único que tienes que hacer es completar esta carta... ¡Papá Noel te está esperando! Y te enviará su respuesta desde el Polo Norte, más rápido que un rayo.</h4>
+
+            <div class="button">
+                <a href="/carta.html">Escribir carta<i class="right"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Crafted with <i style="color:#ff7070" class="fa fa-heart"></i> by Ivan Cazorla</p>
+        <script>
+            //menu mobile working
+            function showNav() {
+                $(".nav-hamburger").toggleClass("show");
+                $(".bar1, .bar2, .bar3").toggleClass("bar-color");
+                $("html, body").toggleClass("no-scrolling");
+                $(".bar1").toggleClass("moveOne");
+                $(".bar2").toggleClass("moveTwo");
+                $(".bar3").toggleClass("moveThree");
+                $("header").toggleClass("headertoo");
+            }
+
+            function showNavToo() {
+                $(".nav-hamburger").toggleClass("show");
+                $(".bar1, .bar2, .bar3").toggleClass("bar-color");
+                $("html, body").toggleClass("no-scrolling");
+                $(".bar1").toggleClass("moveOne");
+                $(".bar2").toggleClass("moveTwo");
+                $(".bar3").toggleClass("moveThree");
+            }
+            //header changes color and padding when user scrolls
+            $(function() {
+                $(window).on("scroll", function() {
+                    if ($(window).scrollTop() > 50) {
+                        $(".header").addClass("user-scrolls");
+                    } else {
+                        $(".header").removeClass("user-scrolls");
+                    }
+                });
+            });
+            //see my work button arrow
+            $(document).ready(function() {
+                $(".button a").mouseover(function() {
+                    $(".right").css("transform", "rotate(45deg)");
+                    $(".right").css("-webkit-transform", "rotate(45deg)");
+                    $(".right").css("margin", "5px 0px 7px 50px");
+                    $(".right").css("transition", "all .2s ease-out");
+                });
+                $(".button a").mouseout(function() {
+                    $(".right").css("transform", "rotate(-45deg)");
+                    $(".right").css("margin", "5px 0px 3px 30px");
+                    $(".right").css("transition", "all .2s ease-out");
+                });
+            });
+            //smooth scroll to id
+            $('a[href*="#"]')
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top - 200
+                            }, 500, function() {
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) {
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1');
+                                    $target.focus();
+                                };
+                            });
+                        }
+                    }
+                });
+        </script>
+    </footer>
+</body>
+
+</html>
