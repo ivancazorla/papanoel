@@ -83,9 +83,8 @@ p {
         -webkit-transition: all .2s ease-in-out;
     }
     #hero {
-        font-size: 52px;
+        font-size: 45px;
         line-height: 50px;
-        height: 85vh;
         text-align: center;
     }
     #hero h4 {
@@ -104,7 +103,7 @@ p {
         font-size: 16px;
     }
     .letter {
-        width: 550px;
+        width: 70%;
         height: 200px;
         margin: 40px 0 0;
         border: 10px solid transparent;
