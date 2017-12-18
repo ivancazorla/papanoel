@@ -116,7 +116,6 @@ p {
         resize: none;
         font-size: 20px;
     }
-
     .send-letter {
         font-size: 25px;
         font-family: 'Varela Round', sans-serif;
@@ -131,322 +130,148 @@ p {
     }
 }
 
-    /*---TABLET---*/
-    @media (max-width: 1068px) and (min-width: 768px) {
-        #container {
-            margin: 35px;
-        }
-        .user-scrolls {
-            padding: 20px 35px;
-        }
-        header {
-            padding: 50px 35px;
-            transition: all .2s ease-in-out;
-        }
-        .menu {
-            display: none;
-            transition: all .2s ease-in-out;
-            margin: 47px 50px 48px 50px;
-        }
-        #hero {
-            font-size: 75px;
-            line-height: 108px;
-            height: 85vh;
-            margin-top: -20px;
-            text-align: center;
-        }
-        .button {
-            padding-top: 0px;
-        }
-        .button a {
-            font-size: 30px;
-        }
-        .project1 {
-            width: 48%;
-            float: left;
-        }
-        .project2 {
-            width: 48%;
-            float: right;
-        }
-        .antilop1 {
-            width: 100%;
-            float: left;
-        }
-        .antilop2 {
-            width: 100%;
-            float: right;
-        }
-        .nav {
-            display: none;
-        }
-        footer {
-            padding: 24px 35px;
-            font-size: 17px;
-        }
-        .letter {
-            width: 650px;
-            height: 200px;
-            margin: 40px 0 0;
-            border: 10px solid transparent;
-            padding: 15px;
-            border-image: url(img/barber.png) 2% round;
-            border-image-repeat: round;
-            box-shadow: 0 2px 31px rgba(0, 0, 0, .2);
-            font-family: 'Varela Round', sans-serif;
-            resize: none;
-            font-size: 20px;
-        }
+/*---TABLET---*/
 
-        .send-letter {
-            font-size: 30px;
-            font-family: 'Varela Round', sans-serif;
-            text-align: center;
-            text-decoration: none;
-            background: #2d378a;
-            border-radius: 5px;
-            padding: 20px 60px;
-            color: white;
-            margin: 10px 0;
-            cursor: pointer;
-        }
+@media (max-width: 1068px) and (min-width: 768px) {
+    #container {
+        margin: 35px;
     }
-
-    /*---DESKTOP---*/
-    @media (min-width: 1068px) {
-        #container {
-            margin: 90px 50px;
-        }
-        .user-scrolls {
-            padding: 20px 50px;
-        }
-        header {
-            padding: 50px;
-            transition: all .2s ease-in-out;
-        }
-        .menu {
-            display: none;
-            transition: all .2s ease-in-out;
-            margin: 47px 50px 48px 50px;
-        }
-        #hero {
-            max-width: 1000px;
-            font-size: 90px;
-            padding-bottom: 140px;
-            clear: both;
-            line-height: 1.2;
-            margin: auto;
-            text-align: center;
-        }
-        #hero h4 {
-            max-width: 1000px;
-            font-size: 30px;
-            clear: both;
-            line-height: 1.2;
-        }
-        #hero p {
-            margin-left: -3px;
-            margin-top: -15px;
-        }
-        .button {
-            padding-top: 0px;
-            text-align: center;
-        }
-        .button a {
-            font-size: 35px;
-        }
-        .nav-hamburger {
-            display: none;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        li {
-            float: left;
-        }
-        ul li {
-            display: -webkit-inline-box;
-            margin: 0;
-            padding: 12px 0 13px 0;
-        }
-        ul li a {
-            cursor: pointer;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            padding: 12px 20px 13px 20px;
-        }
-        .hamburger {
-            display: none;
-        }
-        .nav-hamburger {
-            display: none;
-        }
-        footer {
-            padding: 25px 50px;
-            font-size: 20px;
-        }
+    .user-scrolls {
+        padding: 20px 35px;
     }
-
-    .headertoo {
-        height: 100vh;
+    header {
+        padding: 50px 35px;
+        transition: all .2s ease-in-out;
     }
-
-    .nav-hamburger {
-        width: 100%;
-        height: 100%;
-        background: #af1b1b;
-        position: fixed;
-        top: -100%;
-        right: 0;
-        transition: all .5s ease;
-        -webkit-transition: all .5s ease;
-        margin: 0;
-        z-index: 3000;
+    .menu {
+        display: none;
+        transition: all .2s ease-in-out;
+        margin: 47px 50px 48px 50px;
     }
-
-    .show {
-        top: 0;
-        padding-top: 20%;
-        z-index: 3000;
+    #hero {
+        font-size: 75px;
+        line-height: 108px;
+        height: 85vh;
+        margin-top: -20px;
+        text-align: center;
     }
-
-    .nav-hamburger a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
+    .button {
+        padding-top: 0px;
+    }
+    .button a {
         font-size: 30px;
     }
+    .nav {
+        display: none;
+    }
+    footer {
+        padding: 24px 35px;
+        font-size: 17px;
+    }
+    .letter {
+        width: 650px;
+        height: 200px;
+        margin: 40px 0 0;
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(img/barber.png) 2% round;
+        border-image-repeat: round;
+        box-shadow: 0 2px 31px rgba(0, 0, 0, .2);
+        font-family: 'Varela Round', sans-serif;
+        resize: none;
+        font-size: 20px;
+    }
+    .send-letter {
+        font-size: 30px;
+        font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        background: #2d378a;
+        border-radius: 5px;
+        padding: 20px 60px;
+        color: white;
+        margin: 10px 0;
+        cursor: pointer;
+    }
+}
 
-    .nav-hamburger ul {
+/*---DESKTOP---*/
+
+@media (min-width: 1068px) {
+    #container {
+        margin: 90px 50px;
+    }
+    .user-scrolls {
+        padding: 20px 50px;
+    }
+    header {
+        padding: 50px;
+        transition: all .2s ease-in-out;
+    }
+    .menu {
+        display: none;
+        transition: all .2s ease-in-out;
+        margin: 47px 50px 48px 50px;
+    }
+    #hero {
+        max-width: 1000px;
+        font-size: 90px;
+        padding-bottom: 140px;
+        clear: both;
+        line-height: 1.2;
+        margin: auto;
+        text-align: center;
+    }
+    #hero h4 {
+        max-width: 1000px;
+        font-size: 30px;
+        clear: both;
+        line-height: 1.2;
+    }
+    #hero p {
+        margin-left: -3px;
+        margin-top: -15px;
+    }
+    .button {
+        padding-top: 0px;
+        text-align: center;
+    }
+    .button a {
+        font-size: 35px;
+    }
+    .nav-hamburger {
+        display: none;
+    }
+    ul {
         margin: 0;
         padding: 0;
         list-style: none;
     }
-
-    .nav-hamburger li {
-        text-align: center;
-        padding: 30px 20px;
-        list-style: none;
+    li {
+        float: left;
     }
-
-    #text {
-        clear: both;
+    ul li {
+        display: -webkit-inline-box;
+        margin: 0;
+        padding: 12px 0 13px 0;
     }
-
-    footer {
-        background: #8e2121;
-        color: #fff;
-        text-align: center;
-        bottom: 0;
-        overflow: auto;
-    }
-
-    header {
-        background: #c13333;
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        overflow: auto;
-        z-index: 1000;
-    }
-
-    .hamburger {
-        width: 30px;
-        height: 34px;
-        transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        position: sticky;
-        position: -webkit-sticky;
-        float: right;
+    ul li a {
         cursor: pointer;
-        z-index: 4000;
-    }
-
-    .bar1,
-    .bar3 {
-        background-color: white;
-        height: 2px;
-        margin: 7px 0;
-        transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-    }
-
-    .bar2 {
-        background-color: white;
-        height: 2px;
-        margin: 7px 0;
-        transition: all 0s ease-out;
-        -webkit-transition: all 0s ease-out;
-    }
-
-    .bar-color {
-        background-color: #fff;
-        z-index: 2000;
-        transition: all .4s ease-out;
-        -webkit-transition: all .4s ease-out;
-    }
-
-
-    .moveOne {
-        transform: translateY(9px) rotate(-45deg);
-        -webkit-transform: translateY(9px) rotate(-45deg);
-    }
-
-    .moveTwo {
-        opacity: 0;
-        transition: all .1s ease-in-out;
-        -webkit-transition: all .1s ease-in-out;
-    }
-
-    .moveThree {
-        transform: translateY(-9px) rotate(45deg);
-        -webkit-transform: translateY(-9px) rotate(45deg);
-    }
-
-    .button a {
         color: white;
         text-decoration: none;
-        background-color: #222;
-        border-radius: 5px;
-        padding: 20px 60px;
-        text-align: center;
-        transition: all .2s ease-in-out;
+        font-size: 20px;
+        padding: 12px 20px 13px 20px;
     }
-
-    i.fa.fa-heart {
-        border-width: 0;
+    .hamburger {
+        display: none;
     }
-
-    i {
-        border: solid #fff;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 5px;
-        transition: all .2s ease-in-out;
+    .nav-hamburger {
+        display: none;
     }
-
-    .right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        margin: 5px 0px 3px 30px;
-        transition: all .2s ease-in-out;
+    footer {
+        padding: 25px 50px;
+        font-size: 20px;
     }
-
-    .right:hover {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        margin: 5px 0px 3px 30px;
-        transition: all .2s ease-in-out;
-    }
-
-    .no-scrolling {
-        overflow: hidden;
-        height: 100%:
-    }
-
     .letter {
         width: 1000px;
         height: 250px;
@@ -462,7 +287,6 @@ p {
         float: left;
         width: 50%;
     }
-
     .send-letter {
         font-size: 35px;
         font-family: 'Varela Round', sans-serif;
@@ -477,3 +301,161 @@ p {
         margin: 150px 0;
         cursor: pointer;
     }
+}
+
+.headertoo {
+    height: 100vh;
+}
+
+.nav-hamburger {
+    width: 100%;
+    height: 100%;
+    background: #af1b1b;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    margin: 0;
+    z-index: 3000;
+}
+
+.show {
+    top: 0;
+    padding-top: 20%;
+    z-index: 3000;
+}
+
+.nav-hamburger a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+.nav-hamburger ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-hamburger li {
+    text-align: center;
+    padding: 30px 20px;
+    list-style: none;
+}
+
+#text {
+    clear: both;
+}
+
+footer {
+    background: #8e2121;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    overflow: auto;
+}
+
+header {
+    background: #c13333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.hamburger {
+    width: 30px;
+    height: 34px;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    position: sticky;
+    position: -webkit-sticky;
+    float: right;
+    cursor: pointer;
+    z-index: 4000;
+}
+
+.bar1,
+.bar3 {
+    background-color: white;
+    height: 2px;
+    margin: 7px 0;
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+.bar2 {
+    background-color: white;
+    height: 2px;
+    margin: 7px 0;
+    transition: all 0s ease-out;
+    -webkit-transition: all 0s ease-out;
+}
+
+.bar-color {
+    background-color: #fff;
+    z-index: 2000;
+    transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+}
+
+
+.moveOne {
+    transform: translateY(9px) rotate(-45deg);
+    -webkit-transform: translateY(9px) rotate(-45deg);
+}
+
+.moveTwo {
+    opacity: 0;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+}
+
+.moveThree {
+    transform: translateY(-9px) rotate(45deg);
+    -webkit-transform: translateY(-9px) rotate(45deg);
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 20px 60px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+i.fa.fa-heart {
+    border-width: 0;
+}
+
+i {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 5px 0px 3px 30px;
+    transition: all .2s ease-in-out;
+}
+
+.right:hover {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 5px 0px 3px 30px;
+    transition: all .2s ease-in-out;
+}
+
+.no-scrolling {
+    overflow: hidden;
+    height: 100%:
+}
