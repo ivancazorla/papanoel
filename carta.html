@@ -33,10 +33,16 @@
     <section id="container">
         <div id="hero">
             <p>Escribe tu carta</p>
-            <textarea class="letter" placeholder="Si has sido bueno... pídele lo que quieras a Papá Noel!"></textarea>
+            <form action="mailto:santa@gmail.com" id="user">
+                <textarea type="text" name="usrname" class="letter" placeholder="Si has sido bueno... pídele lo que quieras a Papá Noel!"></textarea>
+                <input type="submit" class="button">
+            </form>
+<!--
+
             <div class="button">
-                <a href="/carta.html">Escribir carta<i class="right"></i></a>
+                <a href="/carta.html">Enviar<i class="right"></i></a>
             </div>
+-->
         </div>
     </section>
     <footer>
