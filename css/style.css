@@ -65,16 +65,10 @@ p {
 
 @media (max-width: 768px) {
     #container {
-        /*        max-width: 500px;*/
-        /*        border: 2px solid black;*/
-        /*        padding: 50px 20px;*/
         margin: 40px 20px;
     }
     .user-scrolls {
         padding: 20px;
-    }
-    body {
-        /*        background: lightblue;*/
     }
     header {
         padding: 20px;
@@ -135,6 +129,7 @@ p {
         margin: 50px 0;
         cursor: pointer;
     }
+}
 
     /*---TABLET---*/
     @media (max-width: 1068px) and (min-width: 768px) {
@@ -143,9 +138,6 @@ p {
         }
         .user-scrolls {
             padding: 20px 35px;
-        }
-        body {
-            /*        background: blue;*/
         }
         header {
             padding: 50px 35px;
@@ -228,9 +220,6 @@ p {
         .user-scrolls {
             padding: 20px 50px;
         }
-        body {
-            /*        background: lightblue;*/
-        }
         header {
             padding: 50px;
             transition: all .2s ease-in-out;
@@ -299,40 +288,8 @@ p {
             padding: 25px 50px;
             font-size: 20px;
         }
-
-        .letter {
-            width: 1000px;
-            height: 250px;
-            margin: 40px 0;
-            border: 10px solid transparent;
-            padding: 15px;
-            border-image: url(img/barber.png) 2% round;
-            border-image-repeat: round;
-            box-shadow: 0 2px 31px rgba(0, 0, 0, .2);
-            font-family: 'Varela Round', sans-serif;
-            resize: none;
-            font-size: 25px;
-            float: left;
-            width: 50%;
-        }
-
-        .send-letter {
-            font-size: 35px;
-            font-family: 'Varela Round', sans-serif;
-            text-align: center;
-            text-decoration: none;
-            background: #2d378a;
-            border-radius: 5px;
-            padding: 20px 60px;
-            color: white;
-            float: right;
-            width: 40%;
-            margin: 150px 0;
-            cursor: pointer;
-        }
     }
 
-    /*__________*/
     .headertoo {
         height: 100vh;
     }
@@ -375,7 +332,6 @@ p {
         list-style: none;
     }
 
-    /*__________*/
     #text {
         clear: both;
     }
@@ -489,4 +445,35 @@ p {
     .no-scrolling {
         overflow: hidden;
         height: 100%:
+    }
+
+    .letter {
+        width: 1000px;
+        height: 250px;
+        margin: 40px 0;
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(img/barber.png) 2% round;
+        border-image-repeat: round;
+        box-shadow: 0 2px 31px rgba(0, 0, 0, .2);
+        font-family: 'Varela Round', sans-serif;
+        resize: none;
+        font-size: 25px;
+        float: left;
+        width: 50%;
+    }
+
+    .send-letter {
+        font-size: 35px;
+        font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        background: #2d378a;
+        border-radius: 5px;
+        padding: 20px 60px;
+        color: white;
+        float: right;
+        width: 40%;
+        margin: 150px 0;
+        cursor: pointer;
     }
